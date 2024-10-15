@@ -229,7 +229,13 @@ i {
     #side-bar {
         flex: 0 0 20px;
     }
+    .puf {
+        display: none;
+    }
 
+    #menu>a>i {
+        display: block;
+    }
 }
 
 
