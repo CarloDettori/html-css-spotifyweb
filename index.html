@@ -14,8 +14,8 @@
     <section id="up-content" class="">
         <div id="side-bar">
             <div id="up-bar">
-                <div id="icon-box" class="flex align-items-center">
-                    <i class="fa-brands fa-spotify"></i><h1>Spotify</h1>
+                <div id="icon-box"flex align-items-center>
+                    <a class="flex align-items-center" href=""><i class="fa-brands fa-spotify"></i><h1>Spotify</h1></a>
                 </div>
                 <div id="menu">
                     <a href="" class="flex side-link"><i class="fa-solid fa-house"></i><p class="puf">Home</p></a>
@@ -35,7 +35,16 @@
                     </div>
                 </div>
             </div>
-            <div id="down-bar"></div>
+            <div id="down-bar">
+                <div>
+
+                    <a href=""><p>Installa app</p></a>
+                </div>
+                <div id="line"></div>
+                <div>
+                    <h3>John Doe</h3>
+                </div>
+            </div>
         </div>
         <main>
             <header><a id="upgrade" href="">Effettua l'upgrade</a></header>
@@ -59,27 +68,42 @@
                             <p>Subtitle</p>
                         </div>
                         <div class="col">
-                            <div class="img-box"><img src="./img/stranger.jpeg" alt=""></div>
+                            <div class="img-box">
+                                <img src="./img/stranger.jpeg" alt="">
+                                <div class="layover"><i class="fa-solid fa-play"></i></div>
+                            </div>
                             <h3>Starnger Things, Vol. 1 span(a Netflix original Series Soundtrack)</h3>
                             <p>Subtitle</p>
                         </div>
                         <div class="col">
-                            <div class="img-box"><img src="./img/aquietplace.jpeg" alt=""></div>
+                            <div class="img-box">
+                                <img src="./img/aquietplace.jpeg" alt="">
+                                <div class="layover"><i class="fa-solid fa-play"></i></div>
+                            </div>
                             <h3>A quiet place</h3>
                             <p>Subtitle</p>
                         </div>
                         <div class="col">
-                            <div class="img-box"><img src="./img/split.jpeg" alt=""></div>
+                            <div class="img-box">
+                                <img src="./img/split.jpeg" alt="">
+                                <div class="layover"><i class="fa-solid fa-play"></i></div>
+                            </div>
                             <h3>Split</h3>
                             <p>Subtitle</p>
                         </div>
                         <div class="col">
-                            <div class="img-box"><img src="./img/cure.jpeg" alt=""></div>
+                            <div class="img-box">
+                                <img src="./img/cure.jpeg" alt="">
+                                <div class="layover"><i class="fa-solid fa-play"></i></div>
+                            </div>
                             <h3>A cure for wellness</h3>
                             <p>Subtitle</p>
                         </div>
                         <div class="col">
-                            <div class="img-box"><img src="./img/sinister.jpeg" alt=""></div>
+                            <div class="img-box">
+                                <img src="./img/sinister.jpeg" alt="">
+                                <div class="layover"><i class="fa-solid fa-play"></i></div>
+                            </div>
                             <h3>Sinister</h3>
                             <p>Subtitle</p>
                         </div>
@@ -87,22 +111,34 @@
                     <h2>Creato da John Doe</h2>
                     <div class="row">
                         <div class="col">
-                            <div class="img-box"><img src="./img/radar.jpeg" alt=""></div>
+                            <div class="img-box">
+                                <img src="./img/radar.jpeg" alt="">
+                                <div class="layover"><i class="fa-solid fa-play"></i></div>
+                            </div>
                             <h3>Release Radar</h3>
                         </div>
                         <div class="col">
-                            <div class="img-box"><img src="./img/mixdaily.jpeg" alt=""></div>
+                            <div class="img-box">
+                                <img src="./img/mixdaily.jpeg" alt="">
+                                <div class="layover"><i class="fa-solid fa-play"></i></div>
+                            </div>
                             <h3>Daily Mix 1</h3>
                         </div>
                     </div>
                     <h2>Artisti più popolari</h2>
                     <div class="row popular">
                         <div class="col">
-                            <div class="img-box"><img src="./img/youg.jpeg" alt=""></div>
+                            <div class="img-box">
+                                <img src="./img/youg.jpeg" alt="">
+                                <div class="layover"><i class="fa-solid fa-play"></i></div>
+                            </div>
                             <h3>Gianfranco</h3>
                         </div>
                         <div class="col">
-                            <div class="img-box"><img src="./img/einaudi.jpeg" alt=""></div>
+                            <div class="img-box">
+                                <img src="./img/einaudi.jpeg" alt="">
+                                <div class="layover"><i class="fa-solid fa-play"></i></div>
+                            </div>
                             <h3>Giampiero</h3>
                         </div>
                     </div>
@@ -119,19 +155,33 @@
                 </div>
                 <div id="song-artist">
                     <h3 id="song">Sinister</h3>
-                    <p id="artist">artist</p>
+                    <p id="artist">Artist</p>
                 </div>
-                <div id="hart-folder">
+                <div id="hart-folder" class="flex flex-column justify-content-center">
                     <i class="fa-regular fa-heart"></i>
                     <i class="fa-regular fa-folder"></i>
                 </div>
             </div>
             <div id="footer-c">
-                
+                <ul id="player-icons" class="flex align-items-center justify-content-center small-gap">
+                    <li class="player-icon"><i class="fa-solid fa-shuffle"></i></li>
+                    <li class="player-icon"><i class="fa-solid fa-chevron-left"></i></li>
+                    <li id="play-icon" class="player-icon"><i class="fa-regular fa-circle-play"></i></li>
+                    <li class="player-icon"><i class="fa-solid fa-chevron-right"></i></li>
+                    <li class="player-icon"><i class="fa-solid fa-rotate-right"></i></li>
+                </ul>
+                <div class="flex align-items-center medium-gap">
+                    <p>0:25 </p>
+                    <div id="player-barr" class="slidecontainer">
+                        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                    </div>
+                    <p> 4:35</p>
+                </div>
             </div>
-            <div id="footer-r" class="flex">
+            <div id="footer-r" class="flex align-items-center small-gap">
                 <i class="fa-solid fa-list"></i>
                 <i class="fa-solid fa-display"></i>
+                <i class="fa-solid fa-volume-high"></i>
                 <div id="volume-barr" class="slidecontainer">
                     <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
                 </div>
