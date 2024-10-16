@@ -128,18 +128,18 @@
                     <h2>Artisti più popolari</h2>
                     <div class="row popular">
                         <div class="col">
-                            <div class="img-box">
+                            <div class="img-box popular">
                                 <img src="./img/youg.jpeg" alt="">
                                 <div class="layover"><i class="fa-solid fa-play"></i></div>
                             </div>
-                            <h3>Gianfranco</h3>
+                            <h3>Lana Del Rey</h3>
                         </div>
                         <div class="col">
-                            <div class="img-box">
+                            <div class="img-box popular">
                                 <img src="./img/einaudi.jpeg" alt="">
                                 <div class="layover"><i class="fa-solid fa-play"></i></div>
                             </div>
-                            <h3>Giampiero</h3>
+                            <h3>Gianfranco</h3>
                         </div>
                     </div>
                 </div>
@@ -153,7 +153,7 @@
                 <div id="album-box">
                     <img id="album" src="./img/sinister.jpeg" alt="">
                 </div>
-                <div id="song-artist">
+                <div id="song-artist" class="puf">
                     <h3 id="song">Sinister</h3>
                     <p id="artist">Artist</p>
                 </div>
@@ -181,8 +181,9 @@
             <div id="footer-r" class="flex align-items-center small-gap">
                 <i class="fa-solid fa-list"></i>
                 <i class="fa-solid fa-display"></i>
-                <i class="fa-solid fa-volume-high"></i>
-                <div id="volume-barr" class="slidecontainer">
+                
+                <div id="volume-barr" class="slidecontainer flex align-items-center">
+                    <i class="fa-solid fa-volume-high"></i>
                     <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
                 </div>
             </div>
