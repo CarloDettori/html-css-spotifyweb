@@ -14,48 +14,53 @@
     <section id="up-content" class="">
         <div id="side-bar">
             <div id="up-bar">
-                <div></div>
+                <div id="icon-box" class="flex align-items-center">
                     <i class="fa-brands fa-spotify"></i><h1>Spotify</h1>
-
+                </div>
                 <div id="menu">
-                    <a href=""><i class="fa-solid fa-house"></i><p class="puf">Home</p></a>
-                    <a href=""><i class="fa-solid fa-magnifying-glass"></i><p>Cerca</p></a>
-                    <a href=""><i class="fa-solid fa-compact-disc"></i><p>La tua libreria</p></a>
+                    <a href="" class="flex side-link"><i class="fa-solid fa-house"></i><p class="puf">Home</p></a>
+                    <a href="" class="flex"><i class="fa-solid fa-magnifying-glass"></i><p class="puf">Cerca</p></a>
+                    <a href="" class="flex"><i class="fa-solid fa-compact-disc"></i><p class="puf">La tua libreria</p></a>
                 </div>
                 <div id="playlist-menager" class="puf">
-                    <a href=""><p class="uppercase">playlist</p></a>
-                    <a href=""><p><i class="fa-solid fa-square-plus"></i>Nuova playlist</p></a>
-                    <a href=""><p>Nuova playlist</p></a>
-                    <a href=""><p>Nuova playlist</p></a>
-                    <a href=""><p>Nuova playlist</p></a>
-                    <a href=""><p>Nuova playlist</p></a>
-                    <a href=""><p>Nuova playlist</p></a>
-                    <a href=""><p>Nuova playlist</p></a>
+                    <a href="" class="flex align-items-center side-link"><p id="play-men-title" class="uppercase">playlist</p></a>
+                    <a href="" class="flex"><i class="fa-solid fa-square-plus"></i><p class="puf">Nuova playlist</p></a>
+                    <div id="new-play">
+                        <a href=""><p>Nuova playlist</p></a>
+                        <a href=""><p>Nuova playlist</p></a>
+                        <a href=""><p>Nuova playlist</p></a>
+                        <a href=""><p>Nuova playlist</p></a>
+                        <a href=""><p>Nuova playlist</p></a>
+                        <a href=""><p>Nuova playlist</p></a>
+                    </div>
                 </div>
             </div>
             <div id="down-bar"></div>
         </div>
-        <main class="wrapper relativity">
-            <header><a id="upgrade" href="">upgrade</a></header>
+        <main>
+            <header><a id="upgrade" href="">Effettua l'upgrade</a></header>
             <div id="content">
                 <ul id="exp">
-                    <il><a class="exp-link" href="">in evidenza</a></il>
-                    <il><a class="exp-link" href="">podcast</a></il>
-                    <il><a class="exp-link" href="">classifiche</a></il>
-                    <il><a class="exp-link" href="">generi e mood</a></il>
-                    <il><a class="exp-link" href="">scopri</a></il>
+                    <li><a class="exp-link" href="">in evidenza</a></li>
+                    <li><a class="exp-link" href="">podcast</a></li>
+                    <li><a class="exp-link" href="">classifiche</a></li>
+                    <li><a class="exp-link" href="">generi e mood</a></li>
+                    <li><a class="exp-link" href="">scopri</a></li>
                 </ul>
                 <div>
                     <h2> Recently Played</h2>
                     <div class="row">
                         <div class="col">
-                            <div class="img-box"><img src="./img/metal_lifting.jpg" alt=""></div>
+                            <div class="img-box">
+                                <img src="./img/metal_lifting.jpg" alt="">
+                                <div class="layover"><i class="fa-solid fa-play"></i></div>
+                            </div>
                             <h3>Heavy Metal</h3>
                             <p>Subtitle</p>
                         </div>
                         <div class="col">
                             <div class="img-box"><img src="./img/stranger.jpeg" alt=""></div>
-                            <h3>Starnger Things</h3>
+                            <h3>Starnger Things, Vol. 1 span(a Netflix original Series Soundtrack)</h3>
                             <p>Subtitle</p>
                         </div>
                         <div class="col">
@@ -91,7 +96,7 @@
                         </div>
                     </div>
                     <h2>Artisti più popolari</h2>
-                    <div class="row">
+                    <div class="row popular">
                         <div class="col">
                             <div class="img-box"><img src="./img/youg.jpeg" alt=""></div>
                             <h3>Gianfranco</h3>
@@ -108,9 +113,29 @@
     
     <footer>
         <div id="down-content">
-            <div id="footer-l">canzone</div>
-            <div id="footer-c">player</div>
-            <div id="footer-r">volume</div>
+            <div id="footer-l" class="flex">
+                <div id="album-box">
+                    <img id="album" src="./img/sinister.jpeg" alt="">
+                </div>
+                <div id="song-artist">
+                    <h3 id="song">Sinister</h3>
+                    <p id="artist">artist</p>
+                </div>
+                <div id="hart-folder">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-folder"></i>
+                </div>
+            </div>
+            <div id="footer-c">
+                
+            </div>
+            <div id="footer-r" class="flex">
+                <i class="fa-solid fa-list"></i>
+                <i class="fa-solid fa-display"></i>
+                <div id="volume-barr" class="slidecontainer">
+                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                </div>
+            </div>
         </div>
     </footer>
 </body>

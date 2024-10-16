@@ -17,9 +17,15 @@ img {
 
 a {
     display: block;
-    color: white;
+    color: grey;
     text-decoration: none;
 }
+
+a:hover {
+    color: white;
+}
+
+
 
 li {
     list-style: none;
@@ -53,14 +59,6 @@ body {
     border: 1px solid red;
 }
 
-.wrapper {
-    height: 100vh;
-    overflow-y: auto;
-}
-
-.relativity {
-    position: relative;
-}
 
 .uppercase {
     text-transform: uppercase;
@@ -69,7 +67,7 @@ body {
 
 /* flex tools  */
 
-.felx {
+.flex {
     display: flex;
 } 
 
@@ -77,9 +75,14 @@ body {
     flex-wrap: wrap;
 }
 
-.just-cont-center {
+.align-items-center {
     align-items: center;
 }
+
+.justify-content-space-between {
+    justify-content: space-between;
+}
+
 
 
 /* assets */
@@ -87,15 +90,22 @@ body {
 header {
     position: fixed;
     background-color: #00000081;
-    width: 100%;
+    width: calc(100vw - 230px);
     padding: 20px;
+    z-index: 100;
+
+}
+
+#upgrade {
+    display: inline;
+    margin-left: 100%;
 }
 
 #up-content {
     display: flex;
-    height: calc(100vh - 100px);
     width: 100%;
     flex: 1 1 auto;
+    min-height: 0;
 }
 
 #content {
@@ -104,34 +114,132 @@ header {
 
 main{
     flex: 1 1 auto;
-    overflow-y: auto;
-
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
 }
 
 #side-bar {
     background-color: var(--sidebar-bg-color);
-    flex: 0 0 180px;
+    flex: 0 0 230px;
     padding: 20px;
     color: grey;
+    min-height: 400px;
+    overflow: hidden;
+}
+
+#play-men-title, h1{
+    color: white;
+}
+
+#play-men-title {
+    font-weight: 700;
+}
+
+#icon-box {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.fa-square-plus, .fa-spotify {
+    font-size: 300%;
+    padding-left: 0;
+}
+
+#playlist-menager {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    min-height: 0px;
+}
+
+#new-play {
+    padding-left: 20px;
 }
 
 #up-bar, #down-bar {
-    color: grey
+    color: grey;
+}
+
+.fa-spotify {
+    color: white;
 }
 
 footer {
     background-color: var(--footer-bg-color);
-    position: fixed;
-    left: 0px;
-    bottom: 0px;
     width: 100%;
     flex: 0 0 100px;
+    z-index: 100;
 }
 
 #down-content {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+}
+
+#footer-l {
+    flex: 0 0 250px;
+}
+
+#footer-c {
+    flex: 1 1 auto;
+}
+
+#footer-r {
+    flex: 0 0 200px;
+}
+
+#fa-display {
+    display: block;
+    padding: 0 60px;
+}
+
+.slidecontainer {
+    width: 100%; /* Width of the outside container */
+  }
+  
+  /* The slider itself */
+  .slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 5px; /* Specified height */
+    background: #d3d3d3; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+  }
+  
+  /* Mouse-over effects */
+  .slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+  }
+  
+  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #04AA6D; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #04AA6D; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+
+#album-box, #song-artist, #hart-folder {
+    padding: 0 10px;
+}
+
+#album {
+
 }
 
 footer, #down-content {
@@ -158,6 +266,19 @@ footer, #down-content {
     padding-bottom: 20px;
 }
 
+.exp-link::after {
+    content:"";
+    display: block;
+    width: 20px;
+    margin: 0 auto;
+    height: 3px;
+
+}
+
+.exp-link:hover::after {
+    background-color: greenyellow;
+}
+
 .row {
     display: flex;
     padding: 10px 0;
@@ -171,24 +292,42 @@ footer, #down-content {
 
 .img-box {
     padding-top: 10px;
+    position: relative;
+}
+
+.layover {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    transform: translate(-50%, 0);
+}
+
+.img-box:hover .layover {
+    opacity: 1;
 }
 
 .col>p, .col>h3 {
     text-align: center;
 }
 
-h3, p {
+div.popualr>div.col>.img-box {
+    border-radius: 50%;
+}
+
+h3, p:not(.puf) {
     margin: 10px 0;
+}
+
+.puf {
+    margin: auto 0;
 }
 
 h2 {
     margin: 10px 10px 0;
 }
 
-h1 {
-    padding-bottom: 10px;
-    color: white;
-}
+
 
 i {
     padding: 5px;
@@ -196,10 +335,10 @@ i {
 }
 
 #menu {
-    padding-bottom: 10px;
+    padding: 10px 0;
+    padding-left: 3px;
 }
 
-#playlist-menager
 
 /* media query */
 
@@ -226,17 +365,28 @@ i {
     .col {
         width: calc(100% / 2);
     }
+
     #side-bar {
-        flex: 0 0 20px;
+        flex: 0 0 55px;
+        padding: 10px;
     }
-    .puf {
+
+    .puf, #playlist-menager, h1 {
         display: none;
     }
 
     #menu>a>i {
         display: block;
     }
+
+    header {
+        width: 100%;
+    }
+        
+    
 }
+
+
 
 
 
