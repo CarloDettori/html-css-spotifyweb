@@ -21,7 +21,7 @@ a {
     text-decoration: none;
 }
 
-p:not(.txt):not(#new-play>a>p):not(#down-bar>div>a>p) {
+p:not(.txt):not(#new-play>a>p):not(#down-bar>div>a>p):not(#song-artist>a>p) {
     text-align: center;
 }
 
@@ -516,7 +516,7 @@ i {
 
     #footer-r {
         flex-wrap: wrap;
-        flex: 0 0 70px;
+        flex: 0 0 65px;
         padding-right: 0;
     }
 
@@ -572,6 +572,10 @@ i {
 
     .player-icon {
         font-size: 120%;
+    }
+
+    #album {
+        padding-right: 10px;
     }
     
 }
