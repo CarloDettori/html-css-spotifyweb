@@ -124,6 +124,7 @@ header {
 
 #upgrade:hover {
     transform: scale(1.2);
+
 }
 
 #up-content {
@@ -217,6 +218,7 @@ footer {
     padding-left: 20px;
     flex: 0 0 150px;
     height: 100px;
+    align-content: center;
 }
 
 #artist {
@@ -240,19 +242,22 @@ footer, #down-content {
     height: 100px;
 }
 
-
 #footer-l {
     padding-right: 20px;
     flex: 0 0 200px;
     height: 100px;
 }
 
-#hart-folder {
-    gap: 3px;
-    padding-top: 10px;
+#song-artist {
+    padding-right: 10px;
 }
 
-
+#hart-folder {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    margin: auto 0;
+}
 
 .slidecontainer {
     width: 100%; /* Width of the outside container */
@@ -307,9 +312,7 @@ footer, #down-content {
     cursor: pointer; /* Cursor on hover */
   }
 
-#song-artist {
-    padding: 0 10px;
-}
+
 
 
 
@@ -463,6 +466,10 @@ i {
 
     #player-icons>li>i {
         font-size: 100%;
+    }
+
+    #hart-folder {
+        flex-direction: column;
     }
 
 }
