@@ -14,13 +14,15 @@
     <section id="up-content" class="">
         <div id="side-bar">
             <div id="up-bar">
-                <div id="icon-box"flex align-items-center>
-                    <a class="flex align-items-center" href=""><i class="fa-brands fa-spotify"></i><h1>Spotify</h1></a>
-                </div>
-                <div id="menu">
-                    <a href="" class="flex side-link"><i class="fa-solid fa-house"></i><p class="puf">Home</p></a>
-                    <a href="" class="flex"><i class="fa-solid fa-magnifying-glass"></i><p class="puf">Cerca</p></a>
-                    <a href="" class="flex"><i class="fa-solid fa-compact-disc"></i><p class="puf">La tua libreria</p></a>
+                <div id="icon-menu">
+                    <div id="icon-box"flex align-items-center>
+                        <a class="flex align-items-center" href=""><i class="fa-brands fa-spotify"></i><h1>Spotify</h1></a>
+                    </div>
+                    <div id="menu">
+                        <a href="" class="flex side-link"><i class="fa-solid fa-house"></i><p class="puf">Home</p></a>
+                        <a href="" class="flex"><i class="fa-solid fa-magnifying-glass"></i><p class="puf">Cerca</p></a>
+                        <a href="" class="flex"><i class="fa-solid fa-compact-disc"></i><p class="puf">La tua libreria</p></a>
+                    </div>
                 </div>
                 <div id="playlist-menager" class="puf">
                     <a href="" class="flex align-items-center side-link"><p id="play-men-title" class="uppercase">playlist</p></a>
@@ -37,11 +39,11 @@
             </div>
             <div id="down-bar">
                 <div>
-                    <a href=""><p>Installa app</p></a>
+                    <a href=""><p class="sub2">Installa app</p></a>
                 </div>
                 <div id="line"></div>
                 <div>
-                    <h3>John Doe</h3>
+                    <a href=""><h3 id="john">John Doe</h3></a>
                 </div>
             </div>
         </div>
@@ -55,7 +57,7 @@
                     <li><a class="exp-link" href="">generi e mood</a></li>
                     <li><a class="exp-link" href="">scopri</a></li>
                 </ul>
-                <div>
+                <div id="main-content">
                     <h2> Recently Played</h2>
                     <div class="row">
                         <div class="col">
@@ -64,7 +66,7 @@
                                 <div class="layover"><i class="fa-solid fa-circle-play"></i></div>
                             </div>
                             <h3>Heavy Metal</h3>
-                            <p>Subtitle</p>
+                            <a href=""><p>Subtitle</p></a>
                         </div>
                         <div class="col">
                             <div class="img-box">
@@ -72,7 +74,7 @@
                                 <div class="layover"><i class="fa-solid fa-circle-play"></i></div>
                             </div>
                             <h3>Starnger Things, Vol. 1 <span class="puf">(a Netflix original Series Soundtrack)</span></h3>
-                            <p>Subtitle</p>
+                            <a href=""><p>Subtitle</p></a>
                         </div>
                         <div class="col">
                             <div class="img-box">
@@ -80,7 +82,7 @@
                                 <div class="layover"><i class="fa-solid fa-circle-play"></i></div>
                             </div>
                             <h3>A quiet place</h3>
-                            <p>Subtitle</p>
+                            <a href=""><p>Subtitle</p></a>
                         </div>
                         <div class="col">
                             <div class="img-box">
@@ -88,7 +90,7 @@
                                 <div class="layover"><i class="fa-solid fa-circle-play"></i></div>
                             </div>
                             <h3>Split</h3>
-                            <p>Subtitle</p>
+                            <a href=""><p>Subtitle</p></a>
                         </div>
                         <div class="col">
                             <div class="img-box">
@@ -96,7 +98,7 @@
                                 <div class="layover"><i class="fa-solid fa-circle-play"></i></div>
                             </div>
                             <h3>A cure for wellness</h3>
-                            <p>Subtitle</p>
+                            <a href=""><p>Subtitle</p></a>
                         </div>
                         <div class="col">
                             <div class="img-box">
@@ -104,10 +106,11 @@
                                 <div class="layover"><i class="fa-solid fa-circle-play"></i></div>
                             </div>
                             <h3>Sinister</h3>
-                            <p>Subtitle</p>
+                            <a href=""><p>Subtitle</p></a>
                         </div>
                     </div>
                     <h2>Creato da John Doe</h2>
+                    <p class="txt">Più ascolti, più accurati saranno i suggerimenti</p>
                     <div class="row">
                         <div class="col">
                             <div class="img-box">
@@ -125,6 +128,7 @@
                         </div>
                     </div>
                     <h2>Artisti più popolari</h2>
+                    <p class="txt">Più ascolti, più accurati saranno i suggerimenti</p>
                     <div class="row popular">
                         <div class="col">
                             <div class="img-box popular">
@@ -153,8 +157,8 @@
                     <img id="album" src="./img/sinister.jpeg" alt="">
                 </div>
                 <div id="song-artist" class="puf">
-                    <h3 id="song">Sinister</h3>
-                    <p id="artist">Artist</p>
+                    <a id="a-song" href=""><h3 id="song">Sinister</h3></a>
+                    <a href=""><p id="artist">Artist</p></a>
                 </div>
                 <div id="hart-folder" class="flex flex-column justify-content-center">
                     <a href=""><i class="fa-regular fa-heart"></i></a>
