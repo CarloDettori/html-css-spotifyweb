@@ -209,21 +209,15 @@ footer {
 #down-content {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
-#footer-l {
-    flex: 0 0 230px;
-}
-
-#footer-c {
-    flex: 1 1 auto;
-}
 
 #footer-r {
+    padding-left: 20px;
     flex: 0 0 150px;
+    height: 100px;
 }
-
-
 
 #artist {
     margin-top: auto;
@@ -233,7 +227,25 @@ footer {
     margin-bottom: 8px;
 }
 
+footer, #down-content {
+    height: 100px;
 
+}
+
+#footer-c {
+    padding: 0 20px;
+    align-content: center;
+    max-width: 500px;
+    flex: 1 1 auto;
+    height: 100px;
+}
+
+
+#footer-l {
+    padding-right: 20px;
+    flex: 0 0 200px;
+    height: 100px;
+}
 
 #hart-folder {
     gap: 3px;
@@ -301,14 +313,9 @@ footer {
 
 
 
-footer, #down-content {
-    height: 100px;
 
-}
 
-#footer-l, #footer-c, #footer-r {
-    padding: 0 10px;
-}
+
 
 #play-icon {
     font-size: 200%;
@@ -319,7 +326,10 @@ footer, #down-content {
 }
 
 #album {
-    padding: 10px;
+    padding: 20px;
+    height: 100%;
+    width: auto;
+
 }
 
 #exp {
@@ -448,7 +458,7 @@ i {
     }
 
     #footer-l {
-        flex: 0 0 200px;
+        flex: 0 0 100px;
     }
 
     #player-icons>li>i {
