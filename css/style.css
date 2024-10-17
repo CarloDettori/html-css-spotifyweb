@@ -38,7 +38,7 @@ body {
     font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
     color: white;
     background-color: var(--main-bg-color);
-    font-size: 50%;
+    font-size: 60%;
 } 
 
 
@@ -113,7 +113,7 @@ header {
 
 #upgrade {
     display: block;
-    width: 130px;
+    width: 140px;
     margin-left: auto;
     border: 2px solid;
     padding: 10px 20px;
@@ -222,6 +222,10 @@ footer {
     align-content: center;
 }
 
+#volume-buttons {
+    display: none;
+}
+
 #artist {
     margin-top: auto;
 }
@@ -324,7 +328,7 @@ footer, #down-content {
 
 
 
-#footer-r>i, #hart-folder>i, .fa-volume-high {
+#footer-r>i, #hart-folder>i, #fa-volume-high {
     font-size: 100%;
 }
 
@@ -478,6 +482,12 @@ i {
         flex-direction: column;
     }
 
+    #volume-buttons {
+        display: inline-block;
+    }
+    #volume-box {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -502,7 +512,14 @@ i {
     header {
         width: 100%;
     }
-        
+    
+    .minutes {
+        display: none;
+    }
+
+    .player-icon {
+        font-size: 120%;
+    }
     
 }
 

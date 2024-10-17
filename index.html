@@ -169,21 +169,28 @@
                     <li class="player-icon"><i class="fa-solid fa-chevron-right"></i></li>
                     <li class="player-icon"><i class="fa-solid fa-rotate-right"></i></li>
                 </ul>
-                <div class="flex align-items-center medium-gap">
-                    <p>0:25 </p>
+                <div id="track-box" class="flex align-items-center medium-gap">
+                    <p class="minutes">0:25 </p>
                     <div id="player-barr" class="slidecontainer">
                         <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
                     </div>
-                    <p> 4:35</p>
+                    <p class="minutes"> 4:35</p>
                 </div>
             </div>
             <div id="footer-r" class="flex align-items-center small-gap">
-                <a href=""><i class="fa-solid fa-list"></i></a>
-                <a href=""><i class="fa-solid fa-display"></i></a>
-                
+                <div id="list-display" class="flex align-items-center">
+                    <a href=""><i class="fa-solid fa-list"></i></a>
+                    <a href=""><i class="fa-solid fa-display"></i></a>
+                </div>
                 <div id="volume-barr" class="slidecontainer flex align-items-center">
-                    <i class="fa-solid fa-volume-high"></i>
-                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                    <div id="volume-box" class="flex align-items-center">
+                        <i id="fa-volume-high" class="fa-solid fa-volume-high"></i>
+                        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                    </div>
+                    <div id="volume-buttons" class="flex align-items-center" >
+                        <i class="fa-solid fa-volume-low"></i>
+                        <i class="fa-solid fa-volume-high"></i>
+                    </div>
                 </div>
             </div>
         </div>
