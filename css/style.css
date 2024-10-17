@@ -27,7 +27,6 @@ a:hover {
 }
 
 
-
 li {
     list-style: none;
 }
@@ -39,6 +38,7 @@ body {
     color: white;
     background-color: var(--main-bg-color);
     font-size: 60%;
+    height: 100vh;
 } 
 
 
@@ -104,11 +104,11 @@ body {
 /* assets */
 
 header {
-    position: fixed;
+    position: absolute;
     background-color: #00000081;
     width: calc(100vw - 200px);
     padding: 10px 20px;
-    z-index: 100;
+    z-index: 4000;
 }
 
 #upgrade {
@@ -132,7 +132,7 @@ header {
     display: flex;
     flex: 1 1 auto;
     min-height: 0;
-    height: auto;
+    height: calc(100vh - 103px);
 }
 
 #content {
@@ -142,7 +142,7 @@ header {
 main {
     flex: 1 1 auto;
     position: relative;
-    overflow: hidden;
+    overflow-y: hidden;
 }
 
 #side-bar {
@@ -151,6 +151,8 @@ main {
     padding: 20px;
     color: grey;
     overflow: hidden;
+    position: relative;
+    z-index: 4000;
 }
 
 #play-men-title, h1{
@@ -165,8 +167,9 @@ main {
     height: 100%;
     display: flex;
     align-items: center;
+    position: relative;
+    z-index: 3000;
 }
-
 
 .fa-square-plus, .fa-spotify {
     font-size: 300%;
@@ -180,13 +183,19 @@ main {
     min-height: 0px;
 }
 
-
 #up-bar, #down-bar {
     color: grey;
 }
 
+#up-bar {
+    flex: 0 0 80px;
+    /* height: calc(100vh - 180px); */
+}
+
+
 #down-bar {
     flex: 1 1 auto;
+    padding-bottom: 20px;
 }
 
 #down-bar {
@@ -205,7 +214,7 @@ footer {
     background-color: var(--footer-bg-color);
     width: 100%;
     flex: 0 0 100px;
-    z-index: 100;
+    z-index: 5000;
 }
 
 #down-content {
@@ -423,6 +432,7 @@ footer, #down-content {
 
 h3, p:not(.puf) {
     margin: 10px 0;
+    line-height: 16px;
 }
 
 .puf {
@@ -511,6 +521,7 @@ i {
 
     header {
         width: 100%;
+        position: relative;
     }
     
     .minutes {
